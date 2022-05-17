@@ -3,7 +3,7 @@ export default function PokemonList( {pokemon} ) {
         <div>
         
        {pokemon.map(p => ( 
-           <div>{p}</div>
+           <div key={p}>{p}</div>
        ))}
         </div>
     )
